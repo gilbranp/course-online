@@ -1,6 +1,8 @@
 import {Container, Row, Col} from "react-bootstrap";
 import HeroImage from '../assets/img/hero.png'
 
+import {kelasTerbaru} from '../data/index';
+
 export default function HomePage() {
   return (
     <div className="homepage">
@@ -21,7 +23,32 @@ export default function HomePage() {
           </Row>
         </Container>
       </header>
-      <div className="kelas w-100 min-vh-100"></div>
+      <div className="kelas w-100 min-vh-100">
+        <Container>
+          <Row>
+            <Col>
+              <h1 className="text-center fw-bold">Kelas Terbaru</h1>
+              <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </Col>
+          </Row>
+          <Row>
+            {kelasTerbaru.map((kelas) => {
+              return <Col key={kelas.id}>
+                <img src={kelas.image} alt="unsplah.com" />
+                <div>
+                  <i className={kelas.star1}></i>
+                  <i className={kelas.star2}></i>
+                  <i className={kelas.star3}></i>
+                  <i className={kelas.star4}></i>
+                  <i className={kelas.star5}></i>
+                </div>
+              </Col>;
+            })}
+            <Col>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   )
 }
