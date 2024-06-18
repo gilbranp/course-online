@@ -11,7 +11,8 @@ export default function HomePage() {
               <h1>
               Temukan <br/><span>Bakat Kreatifmu</span><br/>  Bersama Kami !
               </h1>
-              <p>l</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti ullam provident. Recusandae, eligendi esse.</p>
+            <button>Lihat Kelas</button>
             </Col>
             <Col></Col>
           </Row>
