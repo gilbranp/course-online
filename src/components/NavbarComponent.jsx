@@ -4,6 +4,22 @@ import {navLinks} from "../data/index";
 import { NavLink } from "react-router-dom";
 
 export const NavbarComponent = () => {
+  const [changeColor,setChangeColor] = useState(false)
+
+  const changeBackgroundColor = () => {
+    if(window.scrollY > 10){
+      setChangeColor(true);
+    }else{
+      setChangeColor(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackgroundColor();
+
+    window.addEventListener("scroll",changeBackgroundColor);
+  })
+
   return (
     <div>
       <Navbar expand="lg">
