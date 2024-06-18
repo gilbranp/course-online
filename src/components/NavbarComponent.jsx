@@ -22,7 +22,7 @@ export const NavbarComponent = () => {
 
   return (
     <div>
-      <Navbar expand="lg">
+      <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
       <Container>
         <Navbar.Brand href="#home" className="fs-3 fw-bold">GilbranID.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
