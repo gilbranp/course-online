@@ -25,7 +25,7 @@ function App() {
         <Route path="/syaratketen" Component={SyaratKetenPage}/>
     </Routes>
 
-    {/* <FooterComponent/> */}
+    <FooterComponent/>
  </div>
  );
 }
