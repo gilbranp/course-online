@@ -47,7 +47,7 @@ export default function HomePage() {
             </Col>
           </Row>
           <Row>
-            {kelasTerbaru.map((kelas) => {
+          {kelasTerbaru.map((kelas) => {
               return <Col key={kelas.id} className="shadow rounded">
                 <img src={kelas.image} alt="unsplah.com" className="w-100 mb-5 rounded-top" />
                 <div className="star mb-2 px-3">
