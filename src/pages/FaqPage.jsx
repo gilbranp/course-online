@@ -1,5 +1,9 @@
+import { FaqComponent } from "../components/FaqComponent";
+
 export default function FaqPage() {
   return (
-    <div>FaqPage</div>
+    <div className="pt-5">
+      <FaqComponent/>
+    </div>
   )
 }
