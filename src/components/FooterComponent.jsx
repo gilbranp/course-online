@@ -22,8 +22,13 @@ export default function FooterComponent() {
           </Link>
         </div>
         </Col>
-        <Col>
-        
+        <Col className="d-flex flex-column col-lg-2 col">
+         <h5>Menu</h5>
+         <Link to="">Home</Link>
+         <Link to="kelas">Kelas</Link>
+         <Link to="testimonial">Testimonial</Link>
+         <Link to="faq">FAQ</Link>
+         <Link to="syaratketen">Syarat & Ketentuan</Link>
         </Col>
         <Col></Col>
        </Row>
